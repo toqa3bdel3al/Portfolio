@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Toqa Mohammed — UI/UX Designer crafting intuitive, user-centered digital experiences.">
+  <title>Toqa Mohammed | UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">TM</div>
+      <div class="loader-bar"><span class="loader-progress"></span></div>
+      <p class="loader-text">Crafting Experience...</p>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-outline" aria-hidden="true"></div>
+  <div class="mouse-glow" aria-hidden="true"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" aria-hidden="true"><span class="scroll-progress-bar"></span></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Toqa<span>.</span></a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+          <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+          <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+          <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+          <li><a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a></li>
+          <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+          <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section id="home" class="section hero">
+      <div class="hero-bg">
+        <div class="shape shape-1 parallax" data-speed="0.3"></div>
+        <div class="shape shape-2 parallax" data-speed="0.5"></div>
+        <div class="shape shape-3 parallax" data-speed="0.2"></div>
+        <div class="shape shape-4 parallax" data-speed="0.4"></div>
+      </div>
+
+      <div class="floating-icons" aria-hidden="true">
+        <span class="float-icon float-icon-1">✦</span>
+        <span class="float-icon float-icon-2">◈</span>
+        <span class="float-icon float-icon-3">◇</span>
+        <span class="float-icon float-icon-4">✧</span>
+        <span class="float-icon float-icon-5">◆</span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal-left">
+          <h1 class="hero-name">Toqa Mohammed</h1>
+
+          <p class="typing-text"><span id="typing"></span><span class="typing-cursor">|</span></p>
+          <p class="hero-bio">
+            <strong>UI/UX designer</strong> crafting <strong>intuitive, user-centered digital experiences</strong>. Passionate about turning <strong>complex problems</strong> into <strong>simple, elegant solutions</strong> — designing with empathy, building with purpose. <strong>Pixel-perfect UI</strong> meets <strong>thoughtful UX</strong> for products that are both beautiful and easy to use.
+          </p>
+          <div class="hero-buttons">
+            <a href="./assets/CV/Toqa_CV.pdf" class="btn btn-primary" download>Download CV</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat reveal" data-target="8" data-suffix="+">
+              <span class="hero-stat-number"><span class="count">0</span><span class="suffix"></span></span>
+              <span class="hero-stat-label">Skills &amp; Expertise</span>
+            </div>
+            <div class="hero-stat reveal" data-target="2" data-suffix="+">
+              <span class="hero-stat-number"><span class="count">0</span><span class="suffix"></span></span>
+              <span class="hero-stat-label">Projects Completed</span>
+            </div>
+            <div class="hero-stat reveal" data-target="8" data-suffix="+">
+              <span class="hero-stat-number"><span class="count">0</span><span class="suffix"></span></span>
+              <span class="hero-stat-label">Certificates Earned</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap reveal-right">
+          <div class="hero-image-decor" aria-hidden="true">
+            <div class="hero-decor hero-decor-1"></div>
+            <div class="hero-decor hero-decor-2"></div>
+            <div class="hero-decor hero-decor-3"></div>
+          </div>
+          <div class="hero-image-frame">
+            <img src="./assets/profile/1.jpg" alt="Toqa Mohammed">
+            <div class="hero-image-ring"></div>
+            <div class="hero-image-ring hero-image-ring-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Get to know me</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image reveal-left">
+            <div class="about-image-card">
+              <img src="./assets/about/1.jpg" alt="About Toqa">
+              <div class="about-image-overlay"></div>
+            </div>
+          </div>
+
+          <div class="about-content reveal-right">
+            <div class="about-card">
+              <p>
+                I'm a <strong>UI/UX designer</strong> who crafts <strong>intuitive, user-centered digital experiences</strong>. I turn <strong>complex problems</strong> into <strong>simple, elegant solutions</strong> — designing with empathy and building with purpose. My focus is on <strong>pixel-perfect interfaces</strong> paired with <strong>thoughtful UX</strong>, creating products that are both beautiful and effortless to use.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">My Journey</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline-line"></div>
+          <article class="timeline-card">
+            <div class="timeline-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-badge">Degree</span>
+              <h3>Artificial Intelligence</h3>
+              <p class="timeline-grade"><strong>Grade:</strong> Very Good</p>
+              <p class="timeline-desc">
+                Artificial Intelligence Department focuses on teaching students how to create smart computer systems that can learn, think, and make decisions. Students study subjects like machine learning, data science, programming, and problem-solving to build intelligent applications used in many fields such as healthcare, business, and technology.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Expertise</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+
+        <div class="skills-list">
+          <div class="skill-item reveal" data-percent="95">
+            <div class="skill-header">
+              <span class="skill-name">UI/UX Design</span>
+              <span class="skill-percent">0%</span>
+            </div>
+            <div class="skill-bar"><span class="skill-fill"></span></div>
+          </div>
+
+          <div class="skill-item reveal" data-percent="85">
+            <div class="skill-header">
+              <span class="skill-name">Flutter</span>
+              <span class="skill-percent">0%</span>
+            </div>
+            <div class="skill-bar"><span class="skill-fill"></span></div>
+          </div>
+
+          <div class="skill-item reveal" data-percent="80">
+            <div class="skill-header">
+              <span class="skill-name">Machine Learning</span>
+              <span class="skill-percent">0%</span>
+            </div>
+            <div class="skill-bar"><span class="skill-fill"></span></div>
+          </div>
+
+          <div class="skill-item reveal" data-percent="80">
+            <div class="skill-header">
+              <span class="skill-name">NLP (Natural Language Processing)</span>
+              <span class="skill-percent">0%</span>
+            </div>
+            <div class="skill-bar"><span class="skill-fill"></span></div>
+          </div>
+
+          <div class="skill-item reveal" data-percent="85">
+            <div class="skill-header">
+              <span class="skill-name">Algorithms &amp; Data Structure</span>
+              <span class="skill-percent">0%</span>
+            </div>
+            <div class="skill-bar"><span class="skill-fill"></span></div>
+          </div>
+
+          <div class="skill-item reveal" data-percent="90">
+            <div class="skill-header">
+              <span class="skill-name">OOP</span>
+              <span class="skill-percent">0%</span>
+            </div>
+            <div class="skill-bar"><span class="skill-fill"></span></div>
+          </div>
+
+          <div class="skill-item reveal" data-percent="85">
+            <div class="skill-header">
+              <span class="skill-name">Operating Systems</span>
+              <span class="skill-percent">0%</span>
+            </div>
+            <div class="skill-bar"><span class="skill-fill"></span></div>
+          </div>
+
+          <div class="skill-item reveal" data-percent="88">
+            <div class="skill-header">
+              <span class="skill-name">Database</span>
+              <span class="skill-percent">0%</span>
+            </div>
+            <div class="skill-bar"><span class="skill-fill"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="./assets/projects/12.png" alt="MoodMate AI">
+            </div>
+            <div class="project-info">
+              <h3>MoodMate AI</h3>
+              <p>MoodMate AI is a smart app that helps users track and understand their mood every day. It uses artificial intelligence to analyze emotions and gives simple tips or advice to improve mental well-being.</p>
+              <a href="https://www.figma.com/design/zXkweIcSChsSV6HBOcKkDi/Project?node-id=0-1&t=sjnp2FdJPVkCkLmn-1" target="_blank" rel="noopener noreferrer" class="project-btn">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="./assets/projects/11.png" alt="ZARA">
+            </div>
+            <div class="project-info">
+              <h3>ZARA</h3>
+              <p>Fashion website for Women, Men, and Kids clothing collections with a modern shopping experience.</p>
+              <a href="https://www.figma.com/design/bv9yZNL29pUEuZ6vjp2bdk/ZARA?node-id=0-1&t=6j7TJOkXd2vM6GCA-1" target="_blank" rel="noopener noreferrer" class="project-btn">
+                View Project
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Achievements</span>
+          <h2 class="section-title">Certifications</h2>
+        </div>
+
+        <div class="cert-grid">
+          <article class="cert-card reveal">
+            <div class="cert-image">
+              <img src="./assets/certificates/" alt="UI/UX — NTI">
+            </div>
+            <div class="cert-info">
+              <h3>UI/UX</h3>
+              <p>NTI</p>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-image">
+              <img src="./assets/certificates/2.jpg" alt="Mobile Development using Flutter — ITI">
+            </div>
+            <div class="cert-info">
+              <h3>Mobile Development using Flutter</h3>
+              <p>ITI</p>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-image">
+              <img src="./assets/certificates/3.jpg" alt="AI Overview and Its Important Definition — Huawei Academy ERU Branch">
+            </div>
+            <div class="cert-info">
+              <h3>AI Overview and Its Important Definition</h3>
+              <p>Huawei Academy ERU Branch</p>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-image">
+              <img src="./assets/certificates/4.jpg" alt="AI Prompt Engineering — 1 Million Prompters">
+            </div>
+            <div class="cert-info">
+              <h3>AI Prompt Engineering</h3>
+              <p>1 Million Prompters</p>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-image">
+              <img src="./assets/certificates/5.jpg" alt="Machine Learning — ERU">
+            </div>
+            <div class="cert-info">
+              <h3>Machine Learning</h3>
+              <p>ERU</p>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-image">
+              <img src="./assets/certificates/6.jpg" alt="Data Scientist — DEPI">
+            </div>
+            <div class="cert-info">
+              <h3>Data Scientist</h3>
+              <p>DEPI</p>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-image">
+              <img src="./assets/certificates/7.jpg" alt="Cloud Foundations — AWS Academy">
+            </div>
+            <div class="cert-info">
+              <h3>Cloud Foundations</h3>
+              <p>AWS Academy</p>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-image">
+              <img src="./assets/certificates/8.jpg" alt="Business English Track — Berlitz Egypt">
+            </div>
+            <div class="cert-info">
+              <h3>Business English Track</h3>
+              <p>Berlitz Egypt</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Client Reviews</span>
+          <h2 class="section-title">Testimonials</h2>
+        </div>
+      </div>
+
+      <div class="testimonial-slider-wrap reveal">
+        <div class="testimonial-track" id="testimonial-track">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Toqa delivered an exceptional UI/UX design. Her attention to detail and understanding of user behavior helped us significantly improve our product."</p>
+            <div class="testimonial-author">
+              <img src="./assets/testimonials/1.jpg" alt="Ahmed Mostafa">
+              <div>
+                <h4>Ahmed Mostafa</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Professional, creative, and highly organized. The final design exceeded our expectations."</p>
+            <div class="testimonial-author">
+              <img src="./assets/testimonials/2.jpg" alt="Mariam Hassan">
+              <div>
+                <h4>Mariam Hassan</h4>
+                <span>Startup Founder</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Great communication and outstanding design quality. Highly recommended."</p>
+            <div class="testimonial-author">
+              <img src="./assets/testimonials/3.jpg" alt="Omar Khaled">
+              <div>
+                <h4>Omar Khaled</h4>
+                <span>Software Engineer</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"The user experience improvements made a noticeable impact on customer satisfaction."</p>
+            <div class="testimonial-author">
+              <img src="./assets/testimonials/4.jpg" alt="Nourhan Adel">
+              <div>
+                <h4>Nourhan Adel</h4>
+                <span>Business Owner</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Very talented designer with strong problem-solving skills."</p>
+            <div class="testimonial-author">
+              <img src="./assets/testimonials/5.jpg" alt="Youssef Tarek">
+              <div>
+                <h4>Youssef Tarek</h4>
+                <span>Frontend Developer</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Clean, modern, and user-friendly designs. Amazing experience."</p>
+            <div class="testimonial-author">
+              <img src="./assets/testimonials/6.jpg" alt="Salma Ahmed">
+              <div>
+                <h4>Salma Ahmed</h4>
+                <span>Marketing Specialist</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Delivered everything on time with exceptional quality."</p>
+            <div class="testimonial-author">
+              <img src="./assets/testimonials/7.jpg" alt="Mohamed Essam">
+              <div>
+                <h4>Mohamed Essam</h4>
+                <span>Project Manager</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"One of the best designers I've worked with. Truly impressive work."</p>
+            <div class="testimonial-author">
+              <img src="./assets/testimonials/8.jpg" alt="Aya Mahmoud">
+              <div>
+                <h4>Aya Mahmoud</h4>
+                <span>Entrepreneur</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Duplicate for seamless loop -->
+          <article class="testimonial-card" aria-hidden="true">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Toqa delivered an exceptional UI/UX design. Her attention to detail and understanding of user behavior helped us significantly improve our product."</p>
+            <div class="testimonial-author">
+              <img src="./assets/testimonials/9.jpg" alt="">
+              <div>
+                <h4>Ahmed Mostafa</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card" aria-hidden="true">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Professional, creative, and highly organized. The final design exceeded our expectations."</p>
+            <div class="testimonial-author">
+              <img src="./assets/testimonials/10.jpg" alt="">
+              <div>
+                <h4>Mariam Hassan</h4>
+                <span>Startup Founder</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card" aria-hidden="true">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Great communication and outstanding design quality. Highly recommended."</p>
+            <div class="testimonial-author">
+              <img src="./assets/testimonials/11.jpg" alt="">
+              <div>
+                <h4>Omar Khaled</h4>
+                <span>Software Engineer</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card" aria-hidden="true">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"The user experience improvements made a noticeable impact on customer satisfaction."</p>
+            <div class="testimonial-author">
+              <img src="./assets/testimonials/12.jpg" alt="">
+              <div>
+                <h4>Nourhan Adel</h4>
+                <span>Business Owner</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">What I Offer</span>
+          <h2 class="section-title">Services</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3>UI/UX Design</h3>
+            <span class="service-tool">Tool Used: Figma</span>
+            <p>Creating user-centered interfaces, wireframes, prototypes, design systems, and seamless digital experiences focused on usability and aesthetics.</p>
+            <div class="service-line"></div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3>Data Science</h3>
+            <span class="service-tool">Tool Used: VS Code</span>
+            <p>Analyzing data, extracting insights, building predictive models, data visualization, and transforming raw data into valuable business solutions.</p>
+            <div class="service-line"></div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Natural Language Processing (NLP)</h3>
+            <span class="service-tool">Tool Used: VS Code</span>
+            <p>Building intelligent language-based solutions such as chatbots, text classification systems, sentiment analysis, information extraction, and AI-powered text processing applications.</p>
+            <div class="service-line"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Contact</h2>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card reveal" data-copy="Toqamohammed.a.e@gmail.com">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h3>Email</h3>
+            <p>Toqamohammed.a.e@gmail.com</p>
+            <button class="contact-btn" type="button">Copy Email</button>
+          </article>
+
+          <article class="contact-card reveal" data-copy="01207977033">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3>Phone</h3>
+            <p>01207977033</p>
+            <button class="contact-btn" type="button">Copy Number</button>
+          </article>
+
+          <a href="https://wa.me/201207977033" target="_blank" rel="noopener noreferrer" class="contact-card reveal contact-link">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <h3>WhatsApp</h3>
+            <p>Chat on WhatsApp</p>
+            <span class="contact-btn">Open Chat</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/toqa-mohammed-2b9019320" target="_blank" rel="noopener noreferrer" class="contact-card reveal contact-link">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>Connect with me</p>
+            <span class="contact-btn">View Profile</span>
+          </a>
+        </div>
+
+        <div class="toast" id="toast" role="status" aria-live="polite">Copied to clipboard!</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-text">
+        <p class="footer-copy">Toqa Mohammed &copy; 2026</p>
+        <p class="footer-role">UI/UX Designer &amp; AI Student</p>
+      </div>
+      <div class="footer-social">
+        <a href="mailto:Toqamohammed.a.e@gmail.com" aria-label="Email" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="https://wa.me/201207977033" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/toqa-mohammed-2b9019320" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
